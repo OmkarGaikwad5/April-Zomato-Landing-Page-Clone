@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero_section{
+    background:url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+
+.single{
+    color: white;
+    text-decoration: none;
+}
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 16px 48px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 18px;
+}
+
+
+.navbar__menu_container .link{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu_container .user_icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: solid 1px white;
+    color: white;
+}
+
+.hero_section_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: calc(60vh-65px);
+  flex-direction: column;
+
+}
+
+.hero_section_logo{
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    margin-top: 70px;
+}
+
+.hero_section_title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight:350
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.input_container_location, 
+.input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input_container_search{
+    width: 65%;
+}
+
+
+/* Screen Size is from 0-600 i.e., smaller/mobile screen */
+
+
+
+@media only screen and (max-width: 600px){
+    .navbar__menu_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .hero__section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .hero__section_container{
+        height: calc(80vh - 40px);
+    }
+    .hero__section_title{
+        font-size: 18px;
+        width: 95%;
+    }
+
+}
+
+
+/* This is out of media queries and related to cards section  */
+
+.container{
+    margin: 3rem auto;
+    width: 90%;
+}
+    
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.we_offer_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 1s ease;
+    margin-right: 12px;
+}
+
+.we_offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 30px;
+}
+
+.we_offer_card:hover{
+    transform: scale(1.1);
+}
+
+
