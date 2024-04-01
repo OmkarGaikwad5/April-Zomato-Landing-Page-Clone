@@ -1,0 +1,650 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero_section{
+    background:url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+
+.single{
+    color: white;
+    text-decoration: none;
+}
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 16px 48px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 18px;
+}
+
+
+.navbar__menu_container .link{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu_container .user_icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: solid 1px white;
+    color: white;
+}
+
+.hero_section_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: calc(60vh-65px);
+  flex-direction: column;
+
+}
+
+.hero_section_logo{
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    margin-top: 70px;
+}
+
+.hero_section_title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight:350
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.input_container_location, 
+.input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input_container_search{
+    width: 65%;
+}
+
+
+/* Screen Size is from 0-600 i.e., smaller/mobile screen */
+
+
+
+@media only screen and (max-width: 600px){
+    .navbar__menu_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .hero__section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .hero__section_container{
+        height: calc(80vh - 40px);
+    }
+    .hero__section_title{
+        font-size: 18px;
+        width: 95%;
+    }
+
+}
+
+
+/* This is out of media queries and related to cards section  */
+
+.container{
+    margin: 3rem auto;
+    width: 90%;
+}
+    
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+
+.we_offer_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 1s ease;
+    margin-right: 12px;
+}
+
+.we_offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 30px;
+}
+
+.we_offer_card:hover{
+    transform: scale(1.1);
+}
+
+.collection{
+    font-weight: 600;
+    height: 55vh;
+}
+
+
+
+.collection_ .sub_subheading_container{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.sub_heading_container span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 500px;
+}
+
+.collection_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5 rem;
+    margin-top: 40px;
+
+}
+
+.collection_card_container .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* position: relative; */
+
+}
+
+.card1{
+    background-image: url('day 2 zomato clone/10123-J-20123-Zomato-Landing-Page-master/images/collection1.jpg');
+    
+}
+
+.card2{
+    background-image: url('day 2 zomato clone/10123-J-20123-Zomato-Landing-Page-master/images/collection2.jpg');
+   
+}
+
+.card3{
+    background-image: url('day 2 zomato clone/10123-J-20123-Zomato-Landing-Page-master/images/collection3.jpg');
+   
+}
+
+.card4{
+    background-image: url('day 2 zomato clone/10123-J-20123-Zomato-Landing-Page-master/images/collection4.jpg');
+    
+}
+
+
+
+
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    border-radius: 10px;
+    background: linear-gradient(
+      
+        rgba(225, 0, 0, 1) 0%,
+        rgba(225, 0, 2, 1) 50%,
+        rgba(225, 0, 0, 1) 85%,
+    );
+    z-index: 5;
+}
+
+.collection_card_container,
+.card,
+.content{
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9 remm;
+    z-index: 6;
+    /* justify-content: space-between; */
+    gap: 5px;
+}
+
+
+
+
+
+.content h4{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+/* This is for get the app container */
+
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+    padding: 3rem 6rem;
+}
+
+.get_the_app .semicontainer{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+    
+}
+
+.get_the_app .semicontainer .left{
+    flex: 2;
+}
+
+.get_the_app .semicontainer .left img{
+    width: 55%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    margin-left: 300px;
+}
+.get_the_app .semicontainer .right {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.right h1{
+    font-size: 30px;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.radio_button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.right .radio_button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.right .radio_button_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+
+
+.input_container{
+    flex-wrap: wrap;
+}
+
+.right .input_container{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 10px;
+}
+
+.input_container  button,
+.input_container  input{
+    padding: 10px 12px;
+}
+
+.input_container button{
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download_app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.right .download_app_container h5{
+    font-weight: 400;
+    color: gray;
+    margin-top: 10px;
+}
+
+
+.right .download_app_container div{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.right .download_app_container img{
+    width: 35%;
+}
+
+/* Media Queries for get the app container */
+
+@media only screen and (max-width:1300px){
+    .get_the_app .semicontainer .left
+    .get_the_app .semicontainer .right{
+        flex: 1;
+    }
+
+    .get_the_app .semicontainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .get_the_app{
+        padding: 2rem 0;
+    }
+    .get_the_app .semicontainer{
+        flex-direction: column;
+    }
+
+    
+    
+    }
+
+    @media only screen and (max-width:900px){
+        .right .radio_button_container .input_container .download_app_container{
+            flex-direction: column;
+    }
+}
+
+.heading{
+    justify-content: center;
+    gap: 0.5 rem;
+    margin-left: 20px;
+    
+
+}
+
+.dropdown_1{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 90%;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+}
+
+.dropdown_2{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 90%;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+}
+
+.dropdown_3{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 90%;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+
+    
+}
+
+
+/* This is for footer section */
+
+
+
+.section1_buttoncontainer button {
+    padding: 2px;
+    width: 90px;
+    border: 1px; solid:gray;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.footer_section1{
+    flex-wrap: wrap;
+}
+
+
+.footer .footer_section1 img{
+    width: 10%;
+    margin-left: 5px;
+}
+
+.footer .section1_buttoncontainer{
+    display: flex;
+    margin-left: 90%;
+    gap: 3px;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 8px;
+}
+
+.navigation_center .link_container .footer_link{
+    display: flex;
+    flex-direction: column;
+    
+    text-decoration: none;
+}
+
+.navigation_center .link2_container .footer_link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+   
+}   
+
+.navigation_center .link3_container .footer_link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+.navigation_center .link4_container .footer_link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+   
+}
+
+.navigation_center .link5_container .footer_link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+.navigation_center{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    gap: 1rem;
+    padding: 1.5rem 0;
+   
+}
+
+.disclaimer{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.link2_container{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.link3_container{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.link4_container{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.link5_container{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.link6_container{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: space-evenly;
+}
+
+
+
+.footer_link{
+    color: gray;
+    font-size: 16px;
+}
+
+.footer_link:hover{
+    color: black;
+}
+
+
+.section_link_container button{
+   background-color: black;
+    gap: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+   
+}
+
+.section_link_container button i{
+    color: white;
+}
+
+@media only screen and(max-width:900px){
+    .navigation_center{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media only screen and(max-width:500px){
+    .navigation_center{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and(max-width:300px){
+    .navigation_center{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
