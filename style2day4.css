@@ -417,36 +417,7 @@
     width: 35%;
 }
 
-/* Media Queries for get the app container */
 
-@media only screen and (max-width:1300px){
-    .get_the_app .semicontainer .left
-    .get_the_app .semicontainer .right{
-        flex: 1;
-    }
-
-    .get_the_app .semicontainer{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width:900px){
-    .get_the_app{
-        padding: 2rem 0;
-    }
-    .get_the_app .semicontainer{
-        flex-direction: column;
-    }
-
-    
-    
-    }
-
-    @media only screen and (max-width:900px){
-        .right .radio_button_container .input_container .download_app_container{
-            flex-direction: column;
-    }
-}
 
 .heading{
     justify-content: center;
@@ -648,3 +619,43 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+/* Media Queries for get the app container */
+
+@media only screen and (max-width:1300px){
+    .get_the_app .semicontainer .left
+    .get_the_app .semicontainer .right{
+        flex: 1;
+    }
+
+    .get_the_app .semicontainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .get_the_app{
+        padding: 2rem 0;
+    }
+    .get_the_app .semicontainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .get_the_app{
+        padding: 2rem 0;
+    }
+    .get_the_app .semicontainer{
+        flex-direction: column;
+    }
+
+    
+    
+    }
+
+    @media only screen and (max-width:900px){
+         .right .radio_button_container .input_container .download_app_container{
+            flex-direction: column;
+    }
+}
+    
