@@ -157,9 +157,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 1.75rem;
     align-items: center;
     justify-content: center;
     
+}
+
+.we_offer_content {
+    padding: .5rem;
 }
 
 .cursor{
@@ -190,7 +195,10 @@
 
 .collection{
     font-weight: 600;
-    height: 55vh;
+    height: fit-content;
+    margin: 1.5rem 0;
+    padding: 0 .1.75rem;
+    width: 100%;
 }
 
 
@@ -205,31 +213,58 @@
 }
 
 
-.sub_heading_container span:nth-child(2){
+.sub_heading_container{
     color: #ff7e8b;
-    font-size: 13px;
+    font-size: 1.25rem;
     cursor: pointer;
-    margin-left: 500px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .collection_card_container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 0.5 rem;
     margin-top: 40px;
+    height: fit-content;
 
+}
+.collection_card_container div {
+    display: flex;
+    gap: 0.25rem;
+}
+.content {
+    position: absolute;
+    z-index: 50;
 }
 
 .collection_card_container .card{
-    height: 300px;
-    min-width: 240px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .55rem;
+    background-color: red;
     /* position: relative; */
 
+}
+
+.collection_card_container img {
+    height: 400px;
+}
+
+.description {
+    padding: 1.75rem;
+}
+.description h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
 .card1{
